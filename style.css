@@ -22,7 +22,7 @@ nav ul li a { color: var(--text-dark); text-decoration: none; font-weight: 600; 
 nav ul li a:hover { background-color: var(--primary-color); color: white; }
 
 
-/* Detail Produk (Menggunakan Grid)*/ 
+/* Detail Produk (Menggunakan Grid) */ 
 main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
 .product-detail {
     display: grid;
@@ -36,11 +36,70 @@ main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
 .product-image img { width: 100%; height: auto; border-radius: 8px; transition: transform 0.4s ease; }
 .product-image img:hover { transform: scale(1.02); } /* Efek Hover */
 
-.product-info h2 { font-size: 1.8em; margin-bottom: 5px; font-weight: 700; }
-.product-info h1 { font-size: 1.8em; margin-bottom: 5px; font-weight: 700; }
-.price { font-size: 1.5em; color: var(--secondary-color); font-weight: 600; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
-.description { margin-bottom: 30px; color: #555; }
-.options { margin-bottom: 20px; } 
+/* --- INFORMASI PRODUK (PENYESUAIAN UKURAN FONT) --- */
+
+/* h2 untuk Tagline/Sub-judul (Contoh: "Belanja produk inovatif...") */
+.product-info h2 { 
+    /* Disesuaikan untuk tagline: lebih kecil dan lembut */
+    font-size: 1.05em; 
+    margin-bottom: 5px; 
+    font-weight: 500; /* Sedang */
+    color: #6c757d; /* Warna abu-abu yang lebih lembut */
+}
+
+/* h1 untuk Nama Produk Utama (Contoh: "JASERNAS") */
+.product-info h1 { 
+    /* Ditingkatkan: Ukuran yang kuat sebagai Nama Produk */
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    font-weight: 700; /* Tebal */
+    color: var(--text-dark);
+}
+
+/* Harga (Contoh: "Rp 15.000") */
+.price { 
+    /* Ukuran besar yang sangat menonjol */
+    font-size: 2.0em; 
+    color: var(--secondary-color); 
+    font-weight: 700; /* Paling tebal */
+    margin-bottom: 25px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px solid #eee; 
+}
+
+/* Deskripsi Utama */
+.description { 
+    font-size: 1.0em; /* Ukuran teks standar */
+    line-height: 1.7; /* PENTING: Jarak antar baris yang nyaman */
+    margin-bottom: 30px; 
+    color: #495057; /* Abu-abu gelap untuk keterbacaan */
+}
+
+/* Judul Manfaat (Contoh: "Minuman Jasernas bermanfaat untuk:") */
+.product-info p:not(.price):not(.description) {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+    color: var(--text-dark);
+}
+
+/* Daftar Manfaat */
+.benefits-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: #495057;
+    font-size: 1.0em;
+    line-height: 1.6;
+}
+.benefits-list li {
+    margin-bottom: 5px;
+}
+
+.options { 
+    margin-bottom: 20px; 
+}
 
 /* Tombol Aksi */
 .action-buttons { margin-top: 20px; }
