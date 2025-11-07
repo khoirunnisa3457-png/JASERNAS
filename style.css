@@ -220,3 +220,79 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Styling Halaman Masuk (Login) --- */
+.login-page {
+    /* Menggunakan Flexbox untuk menengahkan box login di layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Memastikan box cukup tinggi di tengah layar */
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Background abu-abu muda */
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum box login */
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: var(--text-dark, #333);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.forgot-password a {
+    color: var(--primary-color, #007bff);
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    /* Menggunakan styling cta-button yang sudah ada */
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+.register-link a {
+    color: var(--secondary-color, #28a745);
+    text-decoration: none;
+    font-weight: 600;
+}
