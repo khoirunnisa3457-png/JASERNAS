@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartu Profil Saya</title>
+    <title>Nama Produk | Toko Online Saya</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
-    <div class="profile-card">
-        <p class="profile-bio">
-            Selamat datang di project pertama saya!
-        </p>
-        
-        <div class="profile-image">
-            <img src="JASERNAS.jpeg" alt="Foto Profil Saya">
-        </div>
-        
-        <h1 class="profile-name">JASERNAS</h1>
-        <p class="profile-bio">
-            Hello! Saya seorang siswa SMK yang tertarik dengan teknologi dan desain. 
-        </p>
-        
-        <div class="profile-actions">
-            <a href="tentang-saya.html" class="btn">Profile Saya</a>
-        </div>
-        
-        <div class="social-links">
-            <a href="https://github.com/JASERNAS" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://instagram.com/jasernas_" target="_blank" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/6287733018634" target="_blank" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
+    <header>
+        <nav>
+            <h1>TokoSaya</h1>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">Keranjang (0)</a></li>
+                <li><a href="#">Masuk</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </div>
+    <main>
+        <section class="product-detail">
+            <div class="product-image">
+                <img src="gambar-produk.jpg" alt="">
+            </div>
+            
+            <div class="product-info">
+                <h2>Nama Produk Keren</h2>
+                <p class="price">Rp 500.000</p>
+                
+                <p class="description">
+                    Deskripsi singkat produk: Produk ini terbuat dari bahan berkualitas tinggi, nyaman dipakai, dan sangat trendi. Cocok untuk semua acara.
+                </p>
 
+                <div class="options">
+                    <label for="size">Ukuran:</label>
+                    <select id="size" name="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+
+                <button class="add-to-cart-btn">Tambahkan ke Keranjang</button>
+                <button class="buy-now-btn">Beli Sekarang</button>
+            </div>
+        </section>
+        
+        <section class="related-products">
+            <h3>Produk Terkait</h3>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TokoSaya. Hak Cipta Dilindungi.</p>
+        <div class="footer-links">
+            <a href="#">Syarat & Ketentuan</a> | <a href="#">Kontak</a>
+        </div>
+    </footer>
 </body>
 </html>
