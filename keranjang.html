@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keranjang Belanja | YANADA</title>
+    <title>Keranjang Belanja Anda | YANADA</title>
     
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS yang diberikan di bawah ini dapat dimasukkan ke dalam file style.css Anda */
+    </style>
 </head>
 <body>
     
@@ -19,7 +22,7 @@
             <ul>
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="katalog.html">Katalog</a></li>
-                <li><a href="keranjang.html" class="active">Keranjang (2)</a></li> 
+                <li class="keranjang-nav"><a href="keranjang.html" class="active">Keranjang (2)</a></li> 
                 <li><a href="masuk.html">Masuk</a></li>
             </ul>
         </nav>
@@ -33,50 +36,45 @@
                 
                 <section class="cart-items-list">
                     
-                    <div class="cart-item">
+                    <div class="cart-item-card">
                         <img src="Jasernas.jpeg" alt="Jasernas" class="cart-item-img">
-                        <div class="item-details">
-                            <h3>Jasernas</h3>
+                        <div class="item-info">
+                            <h3>Jasernas (Minuman Jahe Instan)</h3>
                             <p class="item-price">Rp 15.000 / item</p>
-                            <div class="quantity-control">
-                                <label for="qty-jasernas">Jumlah:</label>
-                                <input type="number" id="qty-jasernas" value="1" min="1" class="item-quantity">
-                            </div>
                         </div>
-                        <div class="item-actions">
-                            <p class="item-subtotal">Subtotal: Rp 15.000</p>
-                            <button class="remove-item">Hapus</button>
+                        <div class="item-controls">
+                            <input type="number" value="1" min="1" class="item-quantity">
+                            <p class="item-subtotal">Rp 15.000</p>
                         </div>
+                        <button class="remove-item-btn">🗑️ Hapus</button>
                     </div>
                     
-                    <div class="cart-item">
+                    <div class="cart-item-card">
                         <img src="BarSoap.jpeg" alt="Bar Soap" class="cart-item-img">
-                        <div class="item-details">
-                            <h3>Bar Soap</h3>
+                        <div class="item-info">
+                            <h3>Bar Soap (Sabun Batang Herbal)</h3>
                             <p class="item-price">Rp 12.000 / item</p>
-                            <div class="quantity-control">
-                                <label for="qty-bar-soap">Jumlah:</label>
-                                <input type="number" id="qty-bar-soap" value="1" min="1" class="item-quantity">
-                            </div>
                         </div>
-                        <div class="item-actions">
-                            <p class="item-subtotal">Subtotal: Rp 12.000</p>
-                            <button class="remove-item">Hapus</button>
+                        <div class="item-controls">
+                            <input type="number" value="2" min="1" class="item-quantity">
+                            <p class="item-subtotal">Rp 24.000</p>
                         </div>
+                        <button class="remove-item-btn">🗑️ Hapus</button>
                     </div>
                     
-                    </section>
+                    <a href="katalog.html" class="continue-shopping">← Lanjut Belanja</a>
+                </section>
 
-                <section class="cart-summary">
-                    <h2>Ringkasan Pesanan</h2>
+                <section class="cart-summary-box">
+                    <h2>📦 Ringkasan Pesanan</h2>
                     <div class="summary-details">
-                        <p><span>Subtotal (2 Item):</span> <span>Rp 27.000</span></p>
+                        <p><span>Subtotal (3 item):</span> <span>Rp 39.000</span></p>
                         <p><span>Biaya Pengiriman:</span> <span>Rp 15.000</span></p>
                         <hr>
-                        <p class="total-price"><span>TOTAL AKHIR:</span> <span>Rp 42.000</span></p>
+                        <p class="total-price"><span>TOTAL AKHIR:</span> <span>Rp 54.000</span></p>
                     </div>
-                    <button class="checkout-btn">Lanjutkan ke Pembayaran</button>
-                    <a href="katalog.html" class="continue-shopping">Lanjut Belanja</a>
+                    <button class="checkout-btn">Lanjutkan ke Pembayaran →</button>
+                    
                 </section>
                 
             </div>
