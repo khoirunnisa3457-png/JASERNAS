@@ -52,3 +52,24 @@ main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
 
 /* Footer dan Responsif (dikeluarkan dari sini untuk singkatnya, tapi penting ada di style.css Anda) */
 /* ... */
+
+/* --- CSS untuk Logo --- */
+nav h1 {
+    display: flex; /* Untuk menyejajarkan logo dan teks secara horizontal */
+    align-items: center; /* Menyejajarkan secara vertikal di tengah */
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo {
+    /* Atur lebar dan tinggi logo agar proporsional di header */
+    height: 30px; /* Tinggi yang umum untuk logo di navbar */
+    width: auto;
+    margin-right: 8px; /* Jarak antara logo dan teks "TokoSaya" */
+}
+
+.site-title {
+    /* Mengatur style teks "TokoSaya" jika Anda tetap menggunakannya */
+    color: var(--primary-color);
+}
