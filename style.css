@@ -21,7 +21,54 @@ nav ul { list-style: none; display: flex; }
 nav ul li a { color: var(--text-dark); text-decoration: none; font-weight: 600; padding: 8px 15px; margin-left: 10px; border-radius: 4px; transition: background-color 0.3s, color 0.3s; }
 nav ul li a:hover { background-color: var(--primary-color); color: white; }
 
-/* Detail Produk (Menggunakan Grid) */
+
+/* --- JUDUL & TAGLINE --- */
+/* Menggunakan h2 untuk Tagline/Sub-judul (contoh: "Produk Terbaik SMK YANNAS") */
+.product-info h2 { 
+    /* Dikurangi dari 2.8em. Ukuran ini lebih cocok untuk sub-judul atau tagline. */
+    font-size: 1.2em; 
+    margin-bottom: 5px; 
+    font-weight: 500; 
+    color: #888; /* Warna sedikit abu-abu agar h1 lebih menonjol */
+}
+
+/* --- NAMA PRODUK UTAMA --- */
+/* Menggunakan h1 untuk Nama Produk (contoh: "JASERNAS") */
+.product-info h1 { 
+    /* Dikurangi dari 2.8em. Ukuran ini menonjol sebagai nama produk utama. */
+    font-size: 2.2em; 
+    margin-bottom: 2px; 
+    font-weight: 700; /* Ditingkatkan agar nama produk lebih tegas */
+}
+
+/* --- HARGA --- */
+.price { 
+    /* Dikurangi dari 2.5em. Ukuran ini tetap besar dan menonjol untuk harga. */
+    font-size: 1.8em; 
+    color: var(--secondary-color); 
+    font-weight: 600; /* Ditingkatkan agar harga kuat */
+    margin-bottom: 20px; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #eee; 
+}
+
+/* --- DESKRIPSI --- */
+.description { 
+    /* Biasanya 1em adalah ukuran standar (atau 1.1em agar lebih nyaman di desktop) */
+    font-size: 1.0em; 
+    margin-bottom: 30px; 
+    color: #555; 
+    line-height: 1.6; /* Ditambahkan: Penting untuk kenyamanan membaca deskripsi */
+}
+
+/* --- PILIHAN (Jumlah/Varian) --- */
+.options { 
+    margin-bottom: 20px; 
+}
+
+
+
+/* Detail Produk (Menggunakan Grid) 
 main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
 .product-detail {
     display: grid;
@@ -32,14 +79,14 @@ main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
     border-radius: 12px;
     box-shadow: var(--shadow-light); /* Efek Card */
 }
-.product-image img { width: 100%; height: auto; border-radius: 8px; transition: transform 0.4s ease; }
-.product-image img:hover { transform: scale(1.02); } /* Efek Hover */
+/*.product-image img { width: 100%; height: auto; border-radius: 8px; transition: transform 0.4s ease; }
+.product-image img:hover { transform: scale(1.02); }  Efek Hover */
 
-.product-info h2 { font-size: 2.8em; margin-bottom: 5px; font-weight: 400; }
+/*.product-info h2 { font-size: 2.8em; margin-bottom: 5px; font-weight: 400; }
 .product-info h1 { font-size: 2.8em; margin-bottom: 2px; font-weight: 250; }
 .price { font-size: 2.5em; color: var(--secondary-color); font-weight: 250; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
 .description { margin-bottom: 30px; color: #555; }
-.options { margin-bottom: 20px; }
+.options { margin-bottom: 20px; } */
 
 /* Tombol Aksi */
 .action-buttons { margin-top: 20px; }
