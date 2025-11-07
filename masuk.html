@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk / Daftar | YANADA</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>
+                <img src="LogoSMKYannas.jpeg" alt="Logo Toko YANADA" class="logo">
+                <span class="site-title">YANADA</span>
+            </h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="keranjang.html">Keranjang (0)</a></li>
+                <li><a href="masuk.html" class="active">Masuk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <div class="login-box">
+            <h2>Masuk ke Akun Anda</h2>
+            <form action="/login" method="POST">
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+                </div>
+                
+                <p class="forgot-password"><a href="#">Lupa Kata Sandi?</a></p>
+
+                <button type="submit" class="login-btn cta-button">Masuk</button>
+            </form>
+            
+            <p class="register-link">Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YANADA Hak Cipta Dilindungi.</p>
+        <div class="footer-links">
+            <a href="#">Syarat & Ketentuan</a> | <a href="#">Kebijakan Privasi</a> | <a href="#">Kontak</a>
+        </div>
+    </footer>
+</body>
+</html>
