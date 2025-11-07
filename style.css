@@ -73,3 +73,14 @@ nav h1 {
     /* Mengatur style teks "TokoSaya" jika Anda tetap menggunakannya */
     color: var(--primary-color);
 }
+
+footer {
+    display: flex;
+    flex-direction: column; /* Menyusun item (p dan div) secara vertikal */
+    align-items: center; /* PENTING: Menengahkan item secara horizontal (sumbu silang) */
+    
+    /* Properti styling lainnya */
+    padding: 25px;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+}
