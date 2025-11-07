@@ -88,7 +88,7 @@ footer {
     text-align: center; /* PENTING: Menengahkan semua teks dan inline-element */
     padding: 25px;
     background-color: var(--text-dark, #333); /* Warna latar belakang gelap */
-    color: var(--text-light, #f4f4f4); /* Warna teks terang */
+    color: var(--text-light, #ffffff); /* Warna teks terang */
     border-top: 1px solid #444; /* Garis pemisah atas */
 }
 
@@ -100,7 +100,7 @@ footer p {
 
 /* Styling untuk Link di Footer */
 .footer-links a {
-    color: var(--text-light, #f4f4f4);
+    color: var(--text-light, #ffffff);
     text-decoration: none;
     margin: 0 8px;
     font-size: 0.9em;
