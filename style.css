@@ -75,13 +75,39 @@ nav h1 {
     color: var(--primary-color);
 }
 
+/* Definisikan warna di :root jika belum ada */
+:root {
+    /* Gunakan warna yang sudah Anda tentukan, ini hanya contoh */
+    --text-dark: #333;
+    --text-light: #f4f4f4;
+}
+
+/* --- Styling Footer --- */
 footer {
-    display: flex;
-    flex-direction: column; /* Menyusun item (p dan div) secara vertikal */
-    align-items: center; /* PENTING: Menengahkan item secara horizontal (sumbu silang) */
-    
-    /* Properti styling lainnya */
+    /* 1. Menentukan latar belakang dan padding */
+    text-align: center; /* PENTING: Menengahkan semua teks dan inline-element */
     padding: 25px;
-    background-color: var(--text-dark);
-    color: var(--text-light);
+    background-color: var(--text-dark, #333); /* Warna latar belakang gelap */
+    color: var(--text-light, #f4f4f4); /* Warna teks terang */
+    border-top: 1px solid #444; /* Garis pemisah atas */
+}
+
+footer p {
+    margin-bottom: 10px; /* Jarak antara copyright dan link */
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Styling untuk Link di Footer */
+.footer-links a {
+    color: var(--text-light, #f4f4f4);
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff; /* Warna hover yang menonjol */
+    text-decoration: underline;
 }
