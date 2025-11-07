@@ -66,11 +66,11 @@ nav h1 {
     /* Atur lebar dan tinggi logo agar proporsional di header */
     height: 30px; /* Tinggi yang umum untuk logo di navbar */
     width: auto;
-    margin-right: 8px; /* Jarak antara logo dan teks "TokoSaya" */
+    margin-right: 8px; /* Jarak antara logo dan teks "YANADA" */
 }
 
 .site-title {
-    /* Mengatur style teks "TokoSaya" jika Anda tetap menggunakannya */
+    /* Mengatur style teks "YANADA" jika Anda tetap menggunakannya */
     color: var(--primary-color);
 }
 
