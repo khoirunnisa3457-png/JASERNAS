@@ -36,7 +36,8 @@ main { padding: 40px 30px; max-width: 1200px; margin: 30px auto; }
 .product-image img:hover { transform: scale(1.02); } /* Efek Hover */
 
 .product-info h2 { font-size: 2.8em; margin-bottom: 5px; font-weight: 700; }
-.price { font-size: 2.5em; color: var(--secondary-color); font-weight: 600; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+.product-info h1 { font-size: 2.8em; margin-bottom: 5px; font-weight: 500; }
+.price { font-size: 2.5em; color: var(--secondary-color); font-weight: 600; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
 .description { margin-bottom: 30px; color: #555; }
 .options { margin-bottom: 20px; }
 
