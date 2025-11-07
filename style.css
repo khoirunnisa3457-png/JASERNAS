@@ -1,128 +1,202 @@
-body {
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: #fffbe6;
-    color: #5d4037;
 }
 
-.header {
-    background-color: #fdd835;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.header p {
-    margin: 8px 0 20px;
-    font-weight: bold;
-}
-
-.banner-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-}
-
-h2 {
-    color: #fbc02d;
-    margin-top: 32px;
-    border-bottom: 2px solid #fbc02d;
-    padding-bottom: 6px;
-}
-
-ul {
-    margin: 12px 0 12px 24px;
-}
-
-.contact p {
-    margin: 6px 0;
-}
-
-.footer {
-    background-color: #795548;
+/* --- Header & Navigasi --- */
+header {
+    background-color: #333;
     color: white;
-    text-align: center;
-    padding: 12px 0;
-    border-radius: 0 0 10px 10px;
-    margin-top: 40px;
-    font-weight: bold;
+    padding: 15px 30px;
 }
 
-button {
-    background-color: #fbc02d;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #5d4037;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-button:hover {
-    background-color: #fdd835;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Modal Styles */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5); 
+nav h1 {
+    font-size: 1.5em;
 }
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    animation: fadeIn 0.3s;
+
+nav ul {
+    list-style: none;
+    display: flex;
 }
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(-20px);}
-    to {opacity: 1; transform: translateY(0);}
+
+nav ul li {
+    margin-left: 20px;
 }
-.close-btn {
-    color: #aaa;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
-.close-btn:hover {
-    color: #000;
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna Emas */
 }
-.modal-img {
+
+/* --- Main Content & Detail Produk --- */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap; /* Agar bisa responsif */
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-image {
+    flex: 1; /* Ambil proporsi ruang */
+    min-width: 300px;
+}
+
+.product-image img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.product-info {
+    flex: 1;
+    min-width: 300px;
+}
 
-Letakkan file CSS ini satu folder dengan HTML Anda, lalu tambahkan pada HTML:
-html
-<link rel="stylesheet" href="style.css">
+.product-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
 
+.price {
+    font-size: 2em;
+    color: #e60023; /* Warna Merah Menonjol */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.options select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* --- Tombol Aksi --- */
+.add-to-cart-btn, .buy-now-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn {
+    background-color: #ffd700; /* Kuning/Emas */
+    color: #333;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffc400;
+}
+
+.buy-now-btn {
+    background-color: #333;
+    color: white;
+}
+
+.buy-now-btn:hover {
+    background-color: #555;
+}
+
+/* --- Produk Terkait --- */
+.related-products {
+    margin-top: 40px;
+}
+
+.related-products h3 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #777;
+    border-top: 1px solid #eee;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsif (Untuk Layar Kecil) --- */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column; /* Tumpuk gambar dan info produk */
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .product-info h2 {
+        font-size: 2em;
+    }
+
+    .add-to-cart-btn, .buy-now-btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
