@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama Produk Keren | Toko Online Saya</title>
+    <title>YANADA | Beranda - Toko Resmi SMK YANNAS</title>
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,11 +12,11 @@
     <header>
         <nav>
             <h1>
-            <img src="LogoSMKYannas.jpeg" alt="Logo TokoSaya" class="logo">
-            <span class="site-title">YANADA</span>
+                <img src="LogoSMKYannas.jpeg" alt="Logo Toko YANADA" class="logo">
+                <span class="site-title">YANADA</span>
             </h1>
             <ul>
-                <li><a href="#">Beranda</a></li>
+                <li><a href="#" class="active">Beranda</a></li>
                 <li><a href="#">Katalog</a></li>
                 <li><a href="#">Keranjang (0)</a></li>
                 <li><a href="#">Masuk</a></li>
@@ -24,42 +25,49 @@
     </header>
 
     <main>
-        <section class="product-detail">
-            <div class="product-image">
-                <img src="Jasernas.jpeg" alt="">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Produk Terbaik SMK YANNAS</h1>
+                <p>Belanja produk inovatif dan berkualitas dari siswa-siswi berprestasi.</p>
+                <a href="#" class="cta-button">Jelajahi Produk</a>
             </div>
-            
-            <div class="product-info">
-                <h2>JASERNAS</h2>
-                <p class="price">Rp 15.000</p>
+        </section>
+
+        <section class="featured-products">
+            <h2>🔥 Produk Terbaru Kami</h2>
+            <div class="product-grid">
                 
-                <p class="description">
-                    Produk ini adalah pilihan tepat untuk Anda. Minuman serbuk instan Jasernas yang menyehatkan dan praktis disajikan, dengan bahan utama jahe dan gula.<br>
-                    Minuman Jasernas bermanfaat untuk:<br>
-	                •	Menghangatkan tubuh<br>
-	                •	Meningkatkan daya tahan tubuh<br>
-	                •	Mengurangi masuk angin dan kelelahan<br>
-                </p>
-
-                <div class="options">
-                    <label for="jml">Jumlah:</label>
-                    <select id="jml" name="jml">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                <div class="product-card">
+                    <img src="Jasernas.jpeg" alt="Gambar Jasernas">
+                    <h3>JASERNAS</h3>
+                    <p class="price-home">Rp 15.000</p>
+                    <a href="detail-jasernas.html" class="add-to-cart-home">Lihat Detail</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="produk-2.jpg" alt="Contoh Produk 2">
+                    <h3>Kue Kering Inovasi</h3>
+                    <p class="price-home">Rp 25.000</p>
+                    <a href="#" class="add-to-cart-home">Lihat Detail</a>
                 </div>
 
-                <div class="action-buttons">
-                    <button class="add-to-cart-btn">Tambahkan ke Keranjang</button>
-                    <button class="buy-now-btn">Beli Sekarang</button>
+                <div class="product-card">
+                    <img src="produk-3.jpg" alt="Contoh Produk 3">
+                    <h3>Sabun Cair Aroma</h3>
+                    <p class="price-home">Rp 18.000</p>
+                    <a href="#" class="add-to-cart-home">Lihat Detail</a>
                 </div>
+                
+                <div class="product-card">
+                    <img src="produk-4.jpg" alt="Contoh Produk 4">
+                    <h3>Kerajinan Tangan</h3>
+                    <p class="price-home">Rp 45.000</p>
+                    <a href="#" class="add-to-cart-home">Lihat Detail</a>
+                </div>
+                
             </div>
         </section>
         
-        <section class="related-products">
-            <h3>Produk Terkait Lainnya</h3>
-            </section>
     </main>
 
     <footer>
